@@ -1,0 +1,47 @@
+
+/*****************************************
+* START OF: MAIN CONTENT
+*****************************************/
+
+#main-content .img {
+	height: 141px;
+	position: relative;
+	margin-bottom: 20px;
+}
+#main-content .img img {
+	position: absolute;
+	bottom: 0;
+}
+#main-container {
+	margin-bottom: 20px;
+}
+#main-content h2 {
+	line-height: 20px;
+	margin-bottom: 14px;
+}
+#main-content h2 a {
+	font-size: 13.5pt;
+	font-weight: normal;
+	text-decoration: underline;
+	color: #b81430;
+	margin: 0 0 14px;
+}
+#main-content p {
+	font-size: 9pt;
+	line-height: 16px;
+	margin: 0;
+	margin-bottom: 6px;
+}
+
+
+
+/*****************************************
+* END OF: MAIN CONTENT
+*****************************************/
+
+.grid-5-1 {
+	width: 172px;
+}
+.grid-3-1 {
+	width: 300px;
+}

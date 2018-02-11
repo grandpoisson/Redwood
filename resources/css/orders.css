@@ -1,0 +1,282 @@
+p {
+	margin: 13px 0;
+}
+div.outside {
+	width: 471px;
+	/*margin: 0 auto;*/
+	text-align: center;
+}
+#slider-next {
+	margin-right: 5px;
+}
+table {
+    width: 471px;
+}
+td {
+	padding: 5px 5px;
+	vertical-align: top;
+}
+td:first-child {
+	width: 140px;
+	padding-left: 0;
+}
+td:first-child label {
+	font-weight: bold;
+}
+td:first-child i {
+	font-weight: normal;
+}
+.info-shares {
+	display: none;
+}
+/*#order-form label:not(.not-required):after {
+	content: '*';
+	color: red;
+	font-weight: bold;
+}*/
+
+input:disabled {
+	background-color: transparent;
+	border: 1px solid #D8D8D8;
+	color: #D8D8D8;
+}
+textarea, input[type="text"], input[type="date"], select {
+	-moz-box-shadow:    inset 0px 1px 3px 0px rgba(178,36,44,0.50);
+	box-shadow:         inset 0px 1px 3px 0px rgba(178,36,44,0.50);
+	border: 1px solid #b4252d;
+	padding: 5px 10px;
+	border-radius: 3px;
+}
+input[type="text"]:focus, input[type="date"]:focus, textarea:focus, select:focus {
+	-moz-box-shadow:    0px 0px 5px 2px rgba(208,1,26,0.50);
+	box-shadow:         0px 0px 5px 2px rgba(208,1,26,0.50);
+	outline:none;
+}
+input[type="text"], input[type="date"] {
+	width: 288px;
+	height: 16px;
+}
+input[type="checkbox"] {
+	margin-right: 10px;
+}
+select {
+	width: 310px;
+	height: 28px;
+}
+select[multiple] {
+	height: auto;
+}
+td select.date-field:not(:last-of-type) {
+    width: 90px;
+    margin-right: 20px;
+    float: left;
+}
+td select.date-field:first-of-type {
+    width: 80px;
+}
+td select.date-field:last-of-type {
+    width: 100px;
+    margin: 0;
+    float: right;
+    
+}
+textarea {
+	resize: none;
+	width: 288px;
+	min-height: 48px;
+}
+
+h2, h3 {
+	display: inline-block;
+}
+h3.step {
+	margin-left: 20px; 
+}
+a {
+	color: black;
+}
+.bx-viewport {
+    height:auto !important
+}
+.bx-wrapper {
+	margin: 0 !important;
+}
+button {
+	font-weight: bold;
+	border-radius: 3px;
+	padding: 5px 10px;
+}
+button:not(:disabled) {
+    color: white;
+    background: #B4252D;
+    background-image: -o-linear-gradient(-89deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.50) 100%);
+    background-image: -moz-linear-gradient(-89deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.50) 100%);
+    background-image: -ms-linear-gradient(-89deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.50) 100%);
+    background-image: linear-gradient(-179deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.50) 100%);
+    border: 1px solid #5D1317;
+    -moz-box-shadow:    0px 1px 2px 0px rgba(255,0,0,0.20);
+    box-shadow:         0px 1px 2px 0px rgba(255,0,0,0.20);
+}
+button:disabled {
+	background-color: transparent;
+	border: 1px solid #D8D8D8;
+	color: #D8D8D8;
+}
+button:focus {
+    -moz-box-shadow:    0px 0px 5px 2px rgba(208,1,26,0.50);
+    box-shadow:         0px 0px 5px 2px rgba(208,1,26,0.50);
+    outline:none;
+}
+.input-div {
+    min-height: 28px;
+    width: 310px;
+}
+.input-div span {
+    border-bottom: 1px dotted black;
+}
+.textarea-div {
+    min-height: 65px;
+    width: 310px;
+}
+.textarea-div span {
+    border-bottom: 1px dotted black;
+}
+
+
+/*******************
+Tabs
+*******************/
+div.tabs {
+    width: 100%;
+    margin: 0 0 20px;
+}
+p.tab-name,
+p.person-roles,
+p.delete-owner-button,
+p.delete-shareholder-button,
+p.delete-director-button {
+    display: inline-block
+}
+
+div.tab {
+    margin: 0 10px 10px 0;
+    display: inline-block;
+    background-color: transparent;
+    border-radius: 4px;
+    padding: 0 5px;
+    /*float: left;*/
+}
+div.tab p {
+    margin: 0;
+    padding: 0;
+}
+div.tab p.tab-name,
+div.tab p.person-roles {
+    color: black;
+}
+div.tab p.delete-owner-button,
+div.tab p.delete-shareholder-button,
+div.tab p.delete-director-button {
+    color: #b4252d;
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+div.tab:not(.director-deleted):hover,
+div.tab:not(.shareholder-deleted):hover,
+div.tab:not(.owner-deleted):hover {
+    cursor: pointer;
+}
+
+div.tab.director-deleted:hover,
+div.tab.shareholder-deleted:hover,
+div.tab.owner-deleted:hover {
+    cursor: default;
+}
+
+div.tab p.delete-owner-button:hover,
+div.tab p.delete-shareholder-button:hover, 
+div.tab p.delete-director-button:hover {
+    cursor: pointer !important;
+}
+
+div.tab.active {
+    background-color: #b4252d;
+}
+div.tab.active p.tab-name,
+div.tab.active p.person-roles,
+div.tab.active p.delete-owner-button,
+div.tab.active p.delete-shareholder-button,
+div.tab.active p.delete-director-button {
+    color: white;
+}
+
+div.tab.director-deleted p.tab-name,
+div.tab.director-deleted p.person-roles {
+   text-decoration: line-through; 
+}
+div.tab:not(.active):not(.owner-deleted):hover,
+div.tab:not(.active):not(.shareholder-deleted):hover,
+div.tab:not(.active):not(.director-deleted):hover {
+    background-color: #FFE6E6;
+}
+button.add-button {
+    margin: 0 20px 0 5px;
+    padding: 0 4px;
+    font-weight: normal;
+}
+
+p#error-list {
+    clear: both;
+    text-align: left;
+    padding-top: 20px;
+    padding-right: 7px;
+    float: right;
+    width: 50%;
+    margin: 0;
+}
+p#error-list label {
+    text-decoration: none; 
+    border-bottom: 1px dotted #7f7f7f;
+}
+p#error-list label:hover {
+    cursor: pointer;
+}
+div.person-tab {
+    margin: 0 10px 10px 0;
+    display: inline-block;
+    background-color: transparent;
+    float: left;
+}
+div.person-tab.active {
+    background-color: #FFE6E6;
+    border-radius: 4px;
+    padding: 0 5px;
+}
+div.person-tab:not(.active) {
+    border-bottom: 1px dashed black;
+}
+div.person-tab:not(.active):hover {
+    cursor: pointer;
+}
+
+.deleted {
+    text-decoration: line-through;
+}
+
+#posted_persons {
+    margin-bottom: 10px;
+}
+
+.one-signatory strong {
+    display: block;
+}
+
+.one-signatory input, .one-signatory textarea, .one-signatory select {
+    margin-bottom: 10px;
+}
+
+#add-signatory {
+    margin-left: 0;
+    margin-bottom: 10px;
+}

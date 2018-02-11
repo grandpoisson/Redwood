@@ -1,0 +1,46 @@
+form {
+	margin-left: 40px;
+}
+table {
+	margin-bottom: 20px;
+}
+td {
+	padding: 0;
+	vertical-align: top;
+}
+td:first-child {
+	width: 106px;
+	font-weight: bold;
+	padding-top: 7px
+}
+form > label {
+	margin-left: 3px;
+}
+textarea, input[type="text"] {
+	-moz-box-shadow:    inset 0px 1px 3px 0px rgba(178,36,44,0.50);
+	box-shadow:         inset 0px 1px 3px 0px rgba(178,36,44,0.50);
+	border: 1px solid #b4252d;
+	padding: 5px 10px;
+	border-radius: 3px;
+}
+textarea {
+	min-height: 93px;
+	overflow: auto;
+	resize: none;
+}
+textarea,
+input[name="enquiry[full_name]"],
+input[name="enquiry[email]"],
+input[name="enquiry[business_activity]"] {
+	width: 288px;
+}
+input[type="submit"] {
+	width: 310px;
+	padding: 15px 30px;
+}
+
+i.error {
+	font-size: 10px;
+	color: #b4252d;
+	display: block;
+}
