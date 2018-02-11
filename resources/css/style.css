@@ -91,7 +91,8 @@ header .logo {
 
 .banner-img {
   height: auto;
-  margin: 1rem 2rem;
+  padding-top: 20px;
+  padding-left: 10px;
 }
 
 .banner-img img {
