@@ -69,10 +69,9 @@ header .logo {
   	display: inline-flex;
   	align-items: center;
 }
-.logonav{
+#logonav{
 	padding-top: 10px;
 	padding-left: 10px;
-
 }
 #landing {
 	display: flex;
