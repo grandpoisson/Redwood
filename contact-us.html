@@ -62,7 +62,7 @@
             </div>
 			<div class="banner-content banner-col-right">
                 <h1>Enquiry Form</h1>
-                <form id="enquiry-form" class="enquiry-form" action="/enquiries/add_enquiry" method="post">
+                <form id="enquiry-form" class="enquiry-form" action="mail_handler.php" method="post">
                     <table style="margin-bottom: 0;">
                         <tbody>
                             <tr>
@@ -70,13 +70,12 @@
                                     <label>Full name</label>
                                 </td>
                                 <td>
-                                    <input maxlength="100" valid="0" type="text" name="enquiry[full_name]">
-                                    <i id="err-name" style="visibility: hidden;" class="error">Validation error</i>
+                                    <input maxlength="100" valid="0" type="text" name="full_name">
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                        <label>Please let us know at least one way to contact you:</label>
+                        <label>Please let us know how to contact you:</label>
                     <table>
                         <tbody>
                             <tr>
@@ -84,30 +83,16 @@
                                     <label>Email</label>
                                 </td>
                                 <td>
-                                    <input maxlength="100" valid="0" type="text" name="enquiry[email]">
-                                    <i id="err-email" style="visibility: hidden;" class="error">Validation error</i>
+                                    <input maxlength="100" valid="0" type="text" name="email">
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
-                                    <label style="font-weight: normal !important">or <b>telephone</b></label>
-                                </td>
-                                <td>
-                                    <div style="display: inline-block; font-size: medium; margin-left: 6px">+</div>
-                                    
-                                        <input id="phone_code" type="text" style="width: 30px; margin-left: 5px" maxlength="3">
-                                        <input id="phone_number" type="text" style="width: 200px; margin-left: 10px" maxlength="18">
-                                        <input id="phone" hidden="" valid="0" type="text" name="enquiry[telephone]">
-                                        <i id="err-phone" style="visibility: hidden;" class="error">Validation error</i>
-                                </td>
-                            </tr>
+
                             <tr>
                                 <td>
                                     <label>Business activity</label>
                                 </td>
                                 <td colspan="3">
-                                    <input maxlength="255" type="text" name="enquiry[business_activity]">
-                                    <i id="err-act" style="visibility: hidden;" class="error">Validation error</i>
+                                    <input maxlength="255" type="text" name="business_activity">
                                 </td>
                             </tr>
                             <tr>
@@ -115,14 +100,13 @@
                                     <label>Message</label>
                                 </td>
                                 <td colspan="3">
-                                    <textarea name="enquiry[message]" valid="0" style="overflow: hidden; word-wrap: break-word; resize: none; height: 93px;"></textarea>
-                                    <i id="err-mess" style="visibility: hidden;" class="error">Validation error</i>
+                                    <textarea name="message" valid="0" style="overflow: hidden; word-wrap: break-word; resize: none; height: 93px;"></textarea>
                                  </td>
                             </tr>
                             <tr>
                                 <td></td>
                                 <td colspan="3">
-                                    <input type="submit" disabled="" value="Get in touch with a professional">
+                                    <input type="submit"  value="Get in touch with a professional">
                                 </td>
                             </tr>
                         </tbody>
