@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Liechtenstein, Anstalt</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="/public/themes/redwood/styles/general.css">
+    <script src="/public/themes/redwood/scripts/jquery-1.11.1.min.js"></script>
+    <style type="text/css">
+        #current-page-block {
+            background-image: url(/public/uploads/images/Jurisdictions-header.png);
+            background-position: bottom right;
+            background-repeat: no-repeat;
+        }
+        
+        #services-block {
+            background-image: url(/public/uploads/images/Redwood-Offshore-Company-Formations-header.png);
+            background-position: bottom right;
+            background-repeat: no-repeat;
+        }
+        
+        #about-us-block {
+            background-image: url(/public/uploads/images/About-Us-header.png);
+            background-position: bottom right;
+            background-repeat: no-repeat;
+        }
+        
+        #jurisdictions-block {
+            background-image: url(/public/uploads/images/Jurisdictions-header.png);
+            background-position: bottom right;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body onload="showForm()">
+    <div id="main-container">
+        <header>
+            <div id="main-logo">
+                <a href="http://redwood-formations.com/"><img alt="" src="/public/themes/redwood/images/main-logo.png"></a>
+            </div>
+
+            <div id="main-menu">
+                <ul id="main-list">
+                    <li id="services-item">Services</li>
+                    <li id="about-us-item">About Us</li>
+                    <li id="jurisdictions-item">Jurisdictions</li>
+                    <li value="1" id="contact-us-item"><a href="http://redwood-formations.com/contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div id="current-page-block" class="default-block main-bg" style="background-position: right 10px;">
+                <h1>Liechtenstein, Anstalt</h1>
+                <p>
+                    Redwood can assist in identifying and incorporating companies in the most suitable jurisdiction, and we offer offshore company formation in all major markets. We provide office facilities, registered local representatives and agents in these jurisdictions, and Redwood clients benefit from this local infrastructure to support their operations.</p>
+            </div>
+
+            <div id="services-block" class="submenu-container main-bg" style="background-position: right 10px;">
+                <div style="width: 220px; float: left">
+                    <a href="http://redwood-formations.com/services/offshore-companies.html">Offshore Companies</a><a href="http://redwood-formations.com/services/offshore-banking.html">Offshore Banking</a><a href="http://redwood-formations.com/services/offshore-foundations.html" style="margin-bottom: 0;">Offshore Foundations</a><a href="http://redwood-formations.com/services/offshore-foundations/forming-an-offshore-foundation.html" style="margin: 0 0 0 15px; line-height: 18px; font-size: 9pt;">Forming an Offshore Foundation</a><a href="http://redwood-formations.com/services/offshore-foundations/types-of-offshore-foundation.html" style="margin: 0 0 0 15px; line-height: 18px; font-size: 9pt;">Types of Offshore Foundation</a><a href="http://redwood-formations.com/services/offshore-foundations/advantages-of-offshore-foundations.html" style="margin: 0 0 0 15px; line-height: 18px; font-size: 9pt;">Advantages of Offshore Foundations</a></div>
+
+                <div style="width: 220px; float: left; margin-left: 20px;">
+                    <a href="http://redwood-formations.com/services/offshore-trusts.html" style="margin-bottom: 0;">Offshore Trusts</a><a href="http://redwood-formations.com/services/offshore-trusts/forming-an-offshore-trust.html" style="margin: 0 0 0 15px; line-height: 18px; font-size: 9pt;">Forming an Offshore Trust</a><a href="http://redwood-formations.com/services/offshore-trusts/types-of-trust.html" style="margin: 0 0 0 15px; line-height: 18px; font-size: 9pt;">Types of Trust</a><a href="http://redwood-formations.com/services/offshore-trusts/advantages-of-an-offshore-trust.html" style="margin: 0 0 0 15px; line-height: 18px; font-size: 9pt;">Advantages of an Offshore Trust</a><a href="http://redwood-formations.com/services/commercial-services.html">Commercial Services</a></div>
+            </div>
+            <div id="about-us-block" class="submenu-container main-bg" style="background-position: right 10px;">
+                <div style="width: 220px; float: left">
+                    <a href="http://redwood-formations.com/about-us/about-redwood.html">About Redwood</a><a href="http://redwood-formations.com/about-us/mission-vision-and-values.html">Mission, Vision and Values</a><a href="http://redwood-formations.com/about-us/due-diligence.html">Due Diligence</a><a href="http://redwood-formations.com/about-us/why-choose-redwood.html">Why Choose Redwood?</a><a href="http://redwood-formations.com/about-us/code-of-conduct.html">Code of Conduct</a></div>
+
+                <div style="width: 220px; float: left; margin-left: 20px;">
+                    <a href="http://redwood-formations.com/about-us/partnering-with-redwood.html">Partnering with Redwood</a><a href="http://redwood-formations.com/about-us/careers.html">Careers</a><a href="http://redwood-formations.com/about-us/privacy-policy.html">Privacy Policy</a><a href="http://redwood-formations.com/about-us/terms-of-business.html">Terms of Business</a></div>
+            </div>
+            <div id="jurisdictions-block" class="submenu-container main-bg" style="background-position: right 10px;">
+
+                <div id="switcher">
+                    <a href="javascript:void();" onclick="switchDisplay(2)" id="s2" class="switched">Popular Jurisdictions</a>
+                    <a href="javascript:void();" onclick="switchDisplay(1)" id="s1">All Jurisdictions</a>
+                    <a href="javascript:void();" onclick="switchDisplay(3)" id="s3">Jurisdictions With Brochure</a>
+                </div>
+
+                <div id="brochure" style="display: none;">
+                    <div style="width: 220px; float: left">
+                        <a href="http://redwood-formations.com/jurisdictions/caribbean/cayman-islands.html#pdf-table">Cayman Islands</a><a href="http://redwood-formations.com/jurisdictions/caribbean/british-virgin-islands.html#pdf-table">British Virgin Islands</a><a href="http://redwood-formations.com/jurisdictions/caribbean/nevis-llc-nbco.html#pdf-table">Nevis, LLC &amp; NBCO</a><a href="http://redwood-formations.com/jurisdictions/central-south-america/panama.html#pdf-table">Panama</a><a href="http://redwood-formations.com/jurisdictions/central-south-america/belize.html#pdf-table">Belize</a><a href="http://redwood-formations.com/jurisdictions/mauritius-and-seychelles/seychelles/seychelles-ibc.html#pdf-table">Seychelles, IBC</a><a href="http://redwood-formations.com/jurisdictions/mauritius-and-seychelles/mauritius/mauritius-gbc-2.html#pdf-table">Mauritius, GBC 2</a><a href="http://redwood-formations.com/jurisdictions/europe/uk/uk-private-limited.html#pdf-table">UK, Private Limited</a><a href="http://redwood-formations.com/jurisdictions/middle-east/rakia-offshore.html#pdf-table">RAKIA Offshore</a> </div>
+
+                    <div style="width: 220px; float: left; margin-left: 20px;">
+                        <a href="http://redwood-formations.com/jurisdictions/middle-east/rak-ic.html#pdf-table">RAK IC</a><a href="http://redwood-formations.com/jurisdictions/middle-east/jebel-ali.html#pdf-table">Jebel Ali</a><a href="http://redwood-formations.com/jurisdictions/asia-pacific/singapore.html#pdf-table">Singapore</a><a href="http://redwood-formations.com/jurisdictions/europe/jersey-exempt.html#pdf-table">Jersey, Exempt</a><a href="http://redwood-formations.com/jurisdictions/europe/isle-of-man/isle-of-man-llc.html#pdf-table">Isle of Man, LLC</a><a href="http://redwood-formations.com/jurisdictions/europe/guernsey.html#pdf-table">Guernsey</a><a href="http://redwood-formations.com/jurisdictions/europe/gibraltar.html#pdf-table">Gibraltar</a><a href="http://redwood-formations.com/jurisdictions/europe/cyprus.html#pdf-table">Cyprus</a> </div>
+                </div>
+
+                <div id="popular">
+                    <div style="width: 220px; float: left">
+                        <a href="http://redwood-formations.com/jurisdictions/asia-pacific/hong-kong-private-limited.html">Hong Kong, Private Limited</a><a href="http://redwood-formations.com/jurisdictions/caribbean/cayman-islands.html">Cayman Islands</a><a href="http://redwood-formations.com/jurisdictions/caribbean/british-virgin-islands.html">British Virgin Islands</a><a href="http://redwood-formations.com/jurisdictions/caribbean/nevis-llc-nbco.html">Nevis, LLC &amp; NBCO</a><a href="http://redwood-formations.com/jurisdictions/central-south-america/panama.html">Panama</a><a href="http://redwood-formations.com/jurisdictions/central-south-america/belize.html">Belize</a> </div>
+
+                    <div style="width: 220px; float: left; margin-left: 20px;">
+                        <a href="http://redwood-formations.com/jurisdictions/mauritius-and-seychelles/seychelles/seychelles-ibc.html">Seychelles, IBC</a><a href="http://redwood-formations.com/jurisdictions/mauritius-and-seychelles/mauritius/mauritius-gbc-2.html">Mauritius, GBC 2</a><a href="http://redwood-formations.com/jurisdictions/mauritius-and-seychelles/mauritius/mauritius-gbc-1.html">Mauritius, GBC 1</a><a href="http://redwood-formations.com/jurisdictions/middle-east/rak-ic.html">RAK IC</a><a href="http://redwood-formations.com/jurisdictions/asia-pacific/singapore.html">Singapore</a><a href="http://redwood-formations.com/jurisdictions/europe/cyprus.html">Cyprus</a> </div>
+                </div>
+
+                <div id="all" style="display: none;">
+                    <div style="float: left;">
+                        <h4>Europe</h4>
+                        <div>
+                            <div style="width: 140px; float: left;">
+                                <a href="http://redwood-formations.com/jurisdictions/europe/cyprus.html">Cyprus</a>
+                                <p style="font-style: italic; margin: 7px 0 0">Denmark</p><a href="http://redwood-formations.com/jurisdictions/europe/denmark/denmark-aps.html" style="margin: 0px 0 0px 10px;">ApS</a><a href="http://redwood-formations.com/jurisdictions/europe/denmark/denmark-as.html" style="margin: 0px 0 0px 10px;">AS</a>
+                                <p style="font-style: italic; margin: 7px 0 0">Finland</p><a href="http://redwood-formations.com/jurisdictions/europe/finland/finland-oya.html" style="margin: 0px 0 0px 10px;">OyA</a><a href="http://redwood-formations.com/jurisdictions/europe/finland/finland-oyj.html" style="margin: 0px 0 0px 10px;">OyJ</a>
+                                <p style="font-style: italic; margin: 7px 0 0">UK</p><a href="http://redwood-formations.com/jurisdictions/europe/uk/uk-llp.html" style="margin: 0px 0 0px 10px;">LLP</a><a href="http://redwood-formations.com/jurisdictions/europe/uk/uk-plc.html" style="margin: 0px 0 0px 10px;">PLC</a><a href="http://redwood-formations.com/jurisdictions/europe/uk/uk-private-limited.html" style="margin: 0px 0 0px 10px;">Private Limited</a>
+                                <p style="font-style: italic; margin: 7px 0 0">Germany</p><a href="http://redwood-formations.com/jurisdictions/europe/germany/germany-ag.html" style="margin: 0px 0 0px 10px;">AG</a><a href="http://redwood-formations.com/jurisdictions/europe/germany/germany-gmbh.html" style="margin: 0px 0 0px 10px;">GmbH</a><a href="http://redwood-formations.com/jurisdictions/europe/gibraltar.html">Gibraltar</a>
+                                <p style="font-style: italic; margin: 7px 0 0">Greece</p><a href="http://redwood-formations.com/jurisdictions/europe/greece/greece-ae.html" style="margin: 0px 0 0px 10px;">AE</a><a href="http://redwood-formations.com/jurisdictions/europe/greece/greece-epe.html" style="margin: 0px 0 0px 10px;">EPE</a><a href="http://redwood-formations.com/jurisdictions/europe/greece/greece-offshore.html" style="margin: 0px 0 0px 10px;">Offshore</a><a href="http://redwood-formations.com/jurisdictions/europe/guernsey.html">Guernsey</a>
+                                <p style="font-style: italic; margin: 7px 0 0">Iceland</p><a href="http://redwood-formations.com/jurisdictions/europe/iceland/iceland-ehf.html" style="margin: 0px 0 0px 10px;">EHF</a><a href="http://redwood-formations.com/jurisdictions/europe/iceland/iceland-hf.html" style="margin: 0px 0 0px 10px;">HF</a><a href="http://redwood-formations.com/jurisdictions/europe/ireland-resident-private-ltd.html">Ireland, Resident Private Ltd</a>
+                                <p style="font-style: italic; margin: 7px 0 0">Isle of Man</p><a href="http://redwood-formations.com/jurisdictions/europe/isle-of-man/isle-of-man-hybrid.html" style="margin: 0px 0 0px 10px;">Hybrid</a><a href="http://redwood-formations.com/jurisdictions/europe/isle-of-man/isle-of-man-llc.html" style="margin: 0px 0 0px 10px;">LLC</a><a href="http://redwood-formations.com/jurisdictions/europe/isle-of-man/isle-of-man-private-company.html" style="margin: 0px 0 0px 10px;">Private Company</a> </div>
+
+                            <div style="width: 140px; margin-left: 20px; float: right;">
+                                <a href="http://redwood-formations.com/jurisdictions/europe/jersey-exempt.html">Jersey, Exempt</a>
+                                <p style="font-style: italic; margin: 7px 0 0">Liechtenstein</p><a href="http://redwood-formations.com/jurisdictions/europe/liechtenstein/liechtenstein-ag.html" style="margin: 0px 0 0px 10px;">AG</a>
+                                <p style="margin: 0px 0 0px 10px; color: #74171e !important; font-weight: bold; font-size: 9pt; line-height: 14px;">Anstalt</p><a href="http://redwood-formations.com/jurisdictions/europe/luxembourg-1990-soparfi-holding.html">Luxembourg, 1990 SOPARFI Holding</a>
+                                <p style="font-style: italic; margin: 7px 0 0">Madeira</p><a href="http://redwood-formations.com/jurisdictions/europe/madeira/madeira-limitada.html" style="margin: 0px 0 0px 10px;">Limitada</a><a href="http://redwood-formations.com/jurisdictions/europe/madeira/madeira-sa.html" style="margin: 0px 0 0px 10px;">SA</a><a href="http://redwood-formations.com/jurisdictions/europe/malta-private-llc.html">Malta, Private LLC</a><a href="http://redwood-formations.com/jurisdictions/europe/netherlands-bv.html">Netherlands, BV</a>
+                                <p style="font-style: italic; margin: 7px 0 0">Poland</p><a href="http://redwood-formations.com/jurisdictions/europe/poland/poland-sa.html" style="margin: 0px 0 0px 10px;">SA</a><a href="http://redwood-formations.com/jurisdictions/europe/poland/poland-sp-k.html" style="margin: 0px 0 0px 10px;">Sp.k</a><a href="http://redwood-formations.com/jurisdictions/europe/poland/poland-sp-zoo.html" style="margin: 0px 0 0px 10px;">Sp.zoo</a>
+                                <p style="font-style: italic; margin: 7px 0 0">Romania</p><a href="http://redwood-formations.com/jurisdictions/europe/romania/romania-joint-stock.html" style="margin: 0px 0 0px 10px;">Joint Stock</a><a href="http://redwood-formations.com/jurisdictions/europe/romania/romania-limited-liability.html" style="margin: 0px 0 0px 10px;">Limited Liability</a>
+                                <p style="font-style: italic; margin: 7px 0 0">Russia</p><a href="http://redwood-formations.com/jurisdictions/europe/russia/russia-llc.html" style="margin: 0px 0 0px 10px;">LLC</a><a href="http://redwood-formations.com/jurisdictions/europe/russia/russia-ojsc.html" style="margin: 0px 0 0px 10px;">OJSC</a>
+                                <p style="font-style: italic; margin: 7px 0 0">Spain</p><a href="http://redwood-formations.com/jurisdictions/europe/spain/spain-sa.html" style="margin: 0px 0 0px 10px;">SA</a><a href="http://redwood-formations.com/jurisdictions/europe/spain/spain-sl.html" style="margin: 0px 0 0px 10px;">SL</a> </div>
+
+                            <div style="clear: both;"></div>
+                        </div>
+
+                        <div>
+                            <div style="width: 140px; float: left;">
+                            </div>
+
+                            <div style="width: 140px; margin-left: 20px; float: right;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="width: 140px; margin-left: 20px; float: left;">
+                        <h4>Asia Pacific</h4>
+                        <p style="font-style: italic; margin: 7px 0 0">Vanuatu</p><a href="http://redwood-formations.com/jurisdictions/asia-pacific/vanuatu/vanuatu-international.html" style="margin: 0px 0 0px 10px;">International</a><a href="http://redwood-formations.com/jurisdictions/asia-pacific/vanuatu/vanuatu-exempt.html" style="margin: 0px 0 0px 10px;">Exempt</a><a href="http://redwood-formations.com/jurisdictions/asia-pacific/singapore.html">Singapore</a><a href="http://redwood-formations.com/jurisdictions/asia-pacific/samoa-ibc.html">Samoa, IBC</a><a href="http://redwood-formations.com/jurisdictions/asia-pacific/marshall-islands-ibc.html">Marshall Islands, IBC</a>
+                        <p style="font-style: italic; margin: 7px 0 0">Australia</p><a href="http://redwood-formations.com/jurisdictions/asia-pacific/australia/australia-proprietary.html" style="margin: 0px 0 0px 10px;">Proprietary</a><a href="http://redwood-formations.com/jurisdictions/asia-pacific/australia/australia-public.html" style="margin: 0px 0 0px 10px;">Public</a><a href="http://redwood-formations.com/jurisdictions/asia-pacific/china-wfoe-or-jv.html">China, WFOE or JV</a><a href="http://redwood-formations.com/jurisdictions/asia-pacific/cook-islands-international.html">Cook Islands, International</a><a href="http://redwood-formations.com/jurisdictions/asia-pacific/hong-kong-private-limited.html">Hong Kong, Private Limited</a>
+                        <p style="font-style: italic; margin: 7px 0 0">Labuan</p><a href="http://redwood-formations.com/jurisdictions/asia-pacific/labuan/labuan-non-trading.html" style="margin: 0px 0 0px 10px;">Non Trading</a><a href="http://redwood-formations.com/jurisdictions/asia-pacific/labuan/labuan-trading.html" style="margin: 0px 0 0px 10px;">Trading</a>
+                        <h4>Central South America</h4><a href="http://redwood-formations.com/jurisdictions/central-south-america/belize.html">Belize</a><a href="http://redwood-formations.com/jurisdictions/central-south-america/bermuda-exempt.html">Bermuda, Exempt</a><a href="http://redwood-formations.com/jurisdictions/central-south-america/costa-rica.html">Costa Rica</a><a href="http://redwood-formations.com/jurisdictions/central-south-america/panama.html">Panama</a>
+                        <h4>Middle East</h4><a href="http://redwood-formations.com/jurisdictions/middle-east/jebel-ali.html">Jebel Ali</a><a href="http://redwood-formations.com/jurisdictions/middle-east/rak-ic.html">RAK IC</a><a href="http://redwood-formations.com/jurisdictions/middle-east/rakia-offshore.html">RAKIA Offshore</a> </div>
+
+                    <div style="width: 140px; margin-left: 20px; float: right;">
+                        <h4>Caribbean</h4><a href="http://redwood-formations.com/jurisdictions/caribbean/anguilla-ibc.html">Anguilla, IBC</a><a href="http://redwood-formations.com/jurisdictions/caribbean/bahamas-ibc.html">Bahamas, IBC</a><a href="http://redwood-formations.com/jurisdictions/caribbean/barbados-ibc.html">Barbados, IBC</a><a href="http://redwood-formations.com/jurisdictions/caribbean/british-virgin-islands.html">British Virgin Islands</a><a href="http://redwood-formations.com/jurisdictions/caribbean/cayman-islands.html">Cayman Islands</a><a href="http://redwood-formations.com/jurisdictions/caribbean/dominica-ibc.html">Dominica, IBC</a><a href="http://redwood-formations.com/jurisdictions/caribbean/st-vincent-ibc.html">St Vincent, IBC</a><a href="http://redwood-formations.com/jurisdictions/caribbean/nevis-llc-nbco.html">Nevis, LLC &amp; NBCO</a>
+                        <h4>Mauritius and Seychelles</h4>
+                        <p style="font-style: italic; margin: 7px 0 0">Mauritius</p><a href="http://redwood-formations.com/jurisdictions/mauritius-and-seychelles/mauritius/mauritius-gbc-1.html" style="margin: 0px 0 0px 10px;">GBC 1</a><a href="http://redwood-formations.com/jurisdictions/mauritius-and-seychelles/mauritius/mauritius-gbc-2.html" style="margin: 0px 0 0px 10px;">GBC 2</a>
+                        <p style="font-style: italic; margin: 7px 0 0">Seychelles</p><a href="http://redwood-formations.com/jurisdictions/mauritius-and-seychelles/seychelles/seychelles-csl.html" style="margin: 0px 0 0px 10px;">CSL</a><a href="http://redwood-formations.com/jurisdictions/mauritius-and-seychelles/seychelles/seychelles-ibc.html" style="margin: 0px 0 0px 10px;">IBC</a>
+                        <h4>Africa</h4><a href="http://redwood-formations.com/jurisdictions/africa/liberia-non-resident.html">Liberia, Non-Resident</a> </div>
+                </div>
+            </div>
+        </header>
+
+        <div id="main-content" class="wrapper">
+
+            <div class="grid-6-1" style="overflow: hidden;"><img src="/public/uploads/images/Liechtenstein-Anstalt.jpg"><i class="image-desc">Gutenberg Castle in Balzers, Liechtenstein</i></div>
+
+            <div class="grid-6-5">
+                <table id="content-table">
+                    <tbody>
+                        <tr>
+                            <th colspan="2" style="padding-top: 0px;">
+                                <h4>
+					General:</h4>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                Type of entity</td>
+                            <td>
+                                Anstalt</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Political stability</td>
+                            <td>
+                                Excellent</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Type of law</td>
+                            <td>
+                                Civil</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Disclosure of beneficial owner</td>
+                            <td>
+                                No</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Migration of domicile permitted</td>
+                            <td>
+                                Yes</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Corporate taxation</td>
+                            <td>
+                                0.1% on assets</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Language of name</td>
+                            <td>
+                                Latin alphabet</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">
+                                <h4>
+					Corporate Requirements:</h4>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                Minimum number of shareholders</td>
+                            <td>
+                                1</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Minimum number of directors/managers</td>
+                            <td>
+                                1</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Corporate directors/managers permitted</td>
+                            <td>
+                                Yes</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Company Secretary required</td>
+                            <td>
+                                No</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Usual authorised capital</td>
+                            <td>
+                                CHF 30,000</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">
+                                <h4>
+					Recurring Government Costs:</h4>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                Minimum annual tax/licence fee</td>
+                            <td>
+                                CHF 1,000</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Annual return filing fee</td>
+                            <td>
+                                N/A</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">
+                                <h4>
+					Local Requirements:</h4>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                Registered office/agent</td>
+                            <td>
+                                Yes</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Company Secretary</td>
+                            <td>
+                                No</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Local directors</td>
+                            <td>
+                                Yes</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Local meetings</td>
+                            <td>
+                                No</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Government register of directors:</td>
+                            <td>
+                                Yes</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Government register of shareholders</td>
+                            <td>
+                                No</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <input id="form-company-button" style=" margin-left: 160px; margin-top: 20px; width: 310px; padding: 15px 30px;" type="submit" value="Form your offshore company now">
+                <script>
+                    document.getElementById("form-company-button").onclick = function() {
+                        location.href = "http://redwood-formations.com/contact-us.html";
+                    };
+                </script>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="footer-container" class="main-bg" style="position: static;">
+        <footer class="wrapper">
+            <div class="grid-6-2">
+
+                <p>© RedWood Company Formations Ltd
+                    <br><a href="http://redwood-formations.com/sitemap">Sitemap</a></p>
+
+            </div>
+
+            <div class="grid-6-2">
+
+                <p id="footer-phone">+44 845 468 09 10</p><a href="mailto:info@redwood-formations.com">info@redwood-formations.com</a>
+                <p id="footer-skype">redwoodformations</p>
+
+            </div>
+
+            <div class="grid-6-2">
+
+                <p>Offices in Dubai, London and Globally</p>
+
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#content-table th').first().css('padding-top', '0');
+        });
+
+        function switchDisplay(swicth_id) {
+            switch (swicth_id) {
+                case 1:
+                    $('#popular').hide();
+                    $('#s2').removeClass('switched');
+                    $('#brochure').hide();
+                    $('#s3').removeClass('switched');
+                    $('#all').show();
+                    $('#s1').addClass('switched');
+                    $('#s3').css('margin', '0');
+                    $('#s2').css('margin', '0');
+                    $('#s1').css('margin', '0 15px 0 15px');
+                    jurBlockResized($('#jurisdictions-block').height() + 10);
+                    break
+                case 2:
+                    $('#brochure').hide();
+                    $('#s3').removeClass('switched');
+                    $('#all').hide();
+                    $('#s1').removeClass('switched');
+                    $('#popular').show();
+                    $('#s2').addClass('switched');
+                    $('#s3').css('margin', '0');
+                    $('#s1').css('margin', '0 20px 0 0');
+                    $('#s2').css('margin-right', '10px');
+                    jurBlockResized($('#jurisdictions-block').height() + 10);
+                    break
+                case 3:
+                    $('#all').hide();
+                    $('#s1').removeClass('switched');
+                    $('#popular').hide();
+                    $('#s2').removeClass('switched');
+                    $('#brochure').show();
+                    $('#s3').addClass('switched');
+                    $('#s1').css('margin', '0 0 0 20px');
+                    $('#s2').css('margin', '0');
+                    $('#s3').css('margin-left', '15px');
+                    jurBlockResized($('#jurisdictions-block').height() + 10);
+            }
+        }
+    </script>
+
+    <script type="text/javascript" src="/public/themes/redwood/scripts/menu.js"></script>
+    <script type="text/javascript">
+        if ($('#content-table th').attr('colspan')) {
+
+        } else {
+            $('#content-table th').attr('colspan', '2');
+        }
+    </script>
+
+    <script type="text/javascript">
+        var current_page_block_height = 0,
+            current_page_image_height = 0;
+
+        var services_block_height = 0,
+            services_image_height = 0;
+
+        var about_us_block_height = 0,
+            about_us_image_height = 0;
+
+        var jurisdictions_block_height = 0,
+            jurisdictions_image_height = 0;
+
+        $(document).ready(function() {
+
+            current_page_block_height = $('#current-page-block').height() + 10;
+            current_page_image_height = 424;
+            if (current_page_image_height > current_page_block_height) {
+                $('#current-page-block').css('background-position', 'right 10px');
+            }
+
+            services_block_height = $('#services-block').height() + 10;
+            services_image_height = 179;
+            if (services_image_height > services_block_height) {
+                $('#services-block').css('background-position', 'right 10px');
+            }
+
+            about_us_block_height = $('#about-us-block').height() + 10;
+            about_us_image_height = 179;
+            if (about_us_image_height > about_us_block_height) {
+                $('#about-us-block').css('background-position', 'right 10px');
+            }
+
+            jurisdictions_block_height = $('#jurisdictions-block').height() + 10;
+            jurisdictions_image_height = 424;
+            if (jurisdictions_image_height > jurisdictions_block_height) {
+                $('#jurisdictions-block').css('background-position', 'right 10px');
+            }
+
+        });
+
+        function jurBlockResized(height) {
+            if (jurisdictions_image_height >= height) {
+                $('#jurisdictions-block').css('background-position', 'right 10px');
+            } else {
+                $('#jurisdictions-block').css('background-position', 'right bottom');
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        function positionFooter() {
+            var mFoo = $("#footer-container");
+            if ((($(document.body).height() + mFoo.outerHeight()) < $(window).height() && mFoo.css("position") == "fixed") || ($(document.body).height() < $(window).height() && mFoo.css("position") != "fixed")) {
+                mFoo.css({
+                    position: "fixed",
+                    bottom: "0px"
+                });
+            } else {
+                mFoo.css({
+                    position: "static"
+                });
+            }
+        }
+
+        $(document).ready(function() {
+            positionFooter();
+            $(window).scroll(positionFooter);
+            $(window).resize(positionFooter);
+            $(window).load(positionFooter);
+            $('#main-content:not(:has(#sitemap)) ul, #main-content:not(:has(#sitemap)) ol').prev().addClass('before-list');
+        });
+    </script>
+
+</body>
+
+</html>
