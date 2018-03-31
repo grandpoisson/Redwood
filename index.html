@@ -9,8 +9,8 @@
     <meta name="description" content="Offshore company formation is our specialty, incorporating companies in Mauritius, The Seychelles, BVI Nevis or RAK for example, we make the company incorporation easy and seamless. Tax efficient structures, trusts and foundations are also part of our services">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/main-page.css">
+    <!--<link rel="stylesheet" type="text/css" href="resources/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/main-page.css">-->
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
 
     <!--<script src="/resources/js/jquery-1.11.1.min.js"></script>-->
@@ -50,54 +50,49 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="https://bootstrapthemes.co" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Jurisdictions
-                        </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item dropdown-toggle" href="#">Popular Jurisdictions</a></li>
-                        <ul class="dropdown-menu">
-
-                            <li>
-                                <a class="dropdown-item" href="./jurisdictions/asia-pacific/hong-kong-private-limited.html">Hong Kong, Private Limited</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="./jurisdictions/caribbean/cayman-islands.html">Cayman Islands</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="./jurisdictions/caribbean/british-virgin-islands.html">British Virgin Islands</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="./jurisdictions/caribbean/nevis-llc-nbco.html">Nevis, LLC & NBCO</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="./jurisdictions/central-south-america/panama.html">Panama</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="./jurisdictions/central-south-america/belize.html">Belize</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="./jurisdictions/mauritius-and-seychelles/seychelles/seychelles-ibc.html">Seychelles, IBC</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="./jurisdictions/mauritius-and-seychelles/mauritius/mauritius-gbc-2.html">Mauritius, GBC2</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="./jurisdictions/mauritius-and-seychelles/mauritius/mauritius-gbc-1.html">Mauritius, GBC1</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="./jurisdictions/middle-east/rak-ic.html">RAK IC</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="./jurisdictions/asia-pacific/singapore.html">Singapore</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="./jurisdictions/europe/cyprus.html">Cyprus</a>
-                            </li>
-                        </ul>
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jurisdictions</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item dropdown-toggle" data-toggle="dropdown" id="PopJur" href="#" aria-haspopup="true" aria-expanded="false">Popular Jurisdictions</a>
+                            <ul class="dropdown-menu" aria-labelledby="PopJur">
+                                <li><a class="dropdown-item" href="./jurisdictions/asia-pacific/hong-kong-private-limited.html">Hong Kong, Private Limited</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="./jurisdictions/caribbean/cayman-islands.html">Cayman Islands</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./jurisdictions/caribbean/british-virgin-islands.html">British Virgin Islands</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./jurisdictions/caribbean/nevis-llc-nbco.html">Nevis, LLC & NBCO</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./jurisdictions/central-south-america/panama.html">Panama</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./jurisdictions/central-south-america/belize.html">Belize</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./jurisdictions/mauritius-and-seychelles/seychelles/seychelles-ibc.html">Seychelles, IBC</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./jurisdictions/mauritius-and-seychelles/mauritius/mauritius-gbc-2.html">Mauritius, GBC2</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./jurisdictions/mauritius-and-seychelles/mauritius/mauritius-gbc-1.html">Mauritius, GBC1</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./jurisdictions/middle-east/rak-ic.html">RAK IC</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./jurisdictions/asia-pacific/singapore.html">Singapore</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./jurisdictions/europe/cyprus.html">Cyprus</a>
+                                </li>
+                            </ul>
+                        </li>
                         <li class="dropdown-divider"></li>
-                        <li><a href="#" class="dropdown-item dropdown-toggle">All Jurisdictions</a></li>
-                        <ul class="dropdown-menu">
-
+                        <li><a class="dropdown-item dropdown-toggle" data-toggle="dropdown" id="AllJur" href="#" aria-haspopup="true" aria-expanded="false">All Jurisdictions</a>
+                        <ul class="dropdown-menu" aria-labelledby="AllJur">
                             <li>
                                 <a class="dropdown-item" href="./jurisdictions/asia-pacific/hong-kong-private-limited.html">Hong Kong, Private Limited</a>
                             </li>
@@ -135,10 +130,10 @@
                                 <a class="dropdown-item" href="./jurisdictions/europe/cyprus.html">Cyprus</a>
                             </li>
                         </ul>
+                    </li>
                         <li class="dropdown-divider"></li>
-                        <li><a href="#" class="dropdown-item dropdown-toggle">Jurisdictions With Brochure</a></li>
-                        <ul class="dropdown-menu">
-
+                        <li><a class="dropdown-item dropdown-toggle" data-toggle="dropdown" id="PDFJur" href="#" aria-haspopup="true" aria-expanded="false">Jurisdictions With Brochure</a>
+                        <ul class="dropdown-menu" aria-labelledby="PDFJur">
                             <li>
                                 <a class="dropdown-item" href="./jurisdictions/asia-pacific/hong-kong-private-limited.html">Hong Kong, Private Limited</a>
                             </li>
@@ -176,6 +171,7 @@
                                 <a class="dropdown-item" href="./jurisdictions/europe/cyprus.html">Cyprus</a>
                             </li>
                         </ul>
+                    </li>
                     </ul>
                 </li>
                 <li class="nav-item">
