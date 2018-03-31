@@ -1,0 +1,62 @@
+/*****************************************
+* START OF: FONTS
+*****************************************/
+	
+@font-face {
+	font-family: 'OptimaLTCYR-Roman';
+	src: url('../fonts/2AAC49_0_0.eot');
+	src: url('../fonts/2AAC49_0_0.eot?#iefix') format('embedded-opentype'), url('../webfonts/2AAC49_0_0.woff') format('woff'), url('../webfonts/2AAC49_0_0.ttf') format('truetype');
+}
+
+/*****************************************
+* END OF: FONTS
+*****************************************/
+
+
+/*****************************************
+* START OF: GENERAL
+*****************************************/
+html {	
+	margin: 0 auto;
+	font-size: 16px;
+}
+body {
+	font-family: Arial, sans-serif;
+	line-height: 13.5pt;
+}
+
+.dropdown-menu {
+	min-width: 200px;
+}
+.dropdown-menu.columns-2 {
+	min-width: 400px;
+}
+.dropdown-menu.columns-3 {
+	min-width: 600px;
+}
+.dropdown-menu li a {
+	padding: 5px 15px;
+	font-weight: 300;
+}
+.multi-column-dropdown {
+	list-style: none;
+}
+.multi-column-dropdown li a {
+	display: block;
+	clear: both;
+	line-height: 1.428571429;
+	color: #333;
+	white-space: normal;
+}
+.multi-column-dropdown li a:hover {
+	text-decoration: none;
+	color: #262626;
+	background-color: #f5f5f5;
+}
+ 
+@media (max-width: 767px) {
+	.dropdown-menu.multi-column {
+		min-width: 240px !important;
+		overflow-x: hidden;
+	}
+}
