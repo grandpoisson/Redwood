@@ -211,6 +211,9 @@ p, ul li span, ul li:last-child span {
 	line-height: 1.2;
 	color: #000;
 }
+#main-content {
+	margin-top:10px;
+}
 #main-content p {
     margin-top: 9px;
 }
@@ -347,7 +350,7 @@ header p {
 
 
 #main-logo {
-	width: 140px;
+	width: 100px;
 	float: left;
 	padding: 10px 10px 0;
 }
@@ -412,6 +415,13 @@ header div div a:first-child, header div div p:first-child {
 	padding: 0;
 	margin: 0;
 }
+.dropdown-header {
+	font-size: 10pt;
+}
+.dropdown-item {
+	font-size: 8pt;
+}
+
 #main-menu > ul li {
 	text-decoration: none;
 	color: #FFF;
