@@ -1,66 +1,361 @@
 <!DOCTYPE html>
 <html>
-    <head>
-	<title>Contact Us</title>
+
+<head>
+    <title>Contact Us</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keywords" content="">
+    <meta name="keywords" content="">
     <meta name="description" content="">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/main-page.css">
-	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
-	<link rel="stylesheet" type="text/css" href="resources/css/enquiries.css">
-	<script src="/resources/js/enquiries.js"></script>
-	<script src="/resources/js/jquery-1.11.1.min.js"></script>
-	<style type="text/css">
-
-
-
-		   			    	#current-page-block {
-    		background-image: url(/resources/images/Redwood-Offshore-Company-Formations-header.png);
-    		background-position: bottom right;
-    		background-repeat: no-repeat;
-    	}
-    		
-
-			#services-block {
-    		background-image: url(/public/uploads/images/Redwood-Offshore-Company-Formations-header.png);
-    		background-position: bottom right;
-    		background-repeat: no-repeat;
-    	}
-    			#about-us-block {
-    		background-image: url(/public/uploads/images/About-Us-header.png);
-    		background-position: bottom right;
-    		background-repeat: no-repeat;
-    	}
-    			#jurisdictions-block {
-    		background-image: url(/public/uploads/images/Jurisdictions-header.png);
-    		background-position: bottom right;
-    		background-repeat: no-repeat;
-    	}
-    	    </style>
+	<link rel="icon" href="./favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--<link rel="stylesheet" type="text/css" href="resources/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/main-page.css">-->
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <style type="text/css">
+        #current-page-block {
+            background-image: url(/resources/images/Redwood-Offshore-Company-Formations-header.png);
+            background-position: bottom right;
+            background-repeat: no-repeat;
+        }
+        
+        #services-block {
+            background-image: url(/public/uploads/images/Redwood-Offshore-Company-Formations-header.png);
+            background-position: bottom right;
+            background-repeat: no-repeat;
+        }
+        
+        #about-us-block {
+            background-image: url(/public/uploads/images/About-Us-header.png);
+            background-position: bottom right;
+            background-repeat: no-repeat;
+        }
+        
+        #jurisdictions-block {
+            background-image: url(/public/uploads/images/Jurisdictions-header.png);
+            background-position: bottom right;
+            background-repeat: no-repeat;
+        }
+    </style>
 </head>
 
-<body onload="showForm()">
+<body>
     <div id="main-container">
-		<header>
-		<!-- Navigation -->
-			<nav>
-				<div id = "logonav">
-					<img src="./resources/images/main-logo.png" width="140" height="280" alt="Main Logo image">
-				</div>
-				<a href="index.html">Home</a>
-				<a href="#">About Us</a>
-				<a href="#">Jurisdictions</a>
-				<a href="contact-us.html">Contact Us</a>
-			</nav>
-		</header>
-        <section id ="landing">
+
+            <div id="logonav">
+                <img src="./resources/images/main-logo.png" width="140" height="280" alt="Main Logo image">
+            </div>
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">Home</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-4">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="about-redwood.html">About Redwood</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="mission-vision-and-values.html">Mission, Vision & Values</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="due-diligence.html">Due Diligence</a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <a class="dropdown-item" href="why-choose-redwood.html">Why Choose Redwood</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="code-of-conduct.html">Code Of Conduct</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="partnering-with-redwood.html">Partnering With Redwood</a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <a class="dropdown-item" href="careers.html">Careers</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <a class="dropdown-item" href="terms-of-business.html">Terms Of Business</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jurisdictions</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#" class="dropdown-item dropdown-toggle" data-toggle="dropdown" id="PopJur" aria-haspopup="true" aria-expanded="false">Popular Jurisdictions</a>
+                                    <ul class="dropdown-menu multi-column columns-2" aria-labelledby="PopJur">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <ul class="multi-column-dropdown">
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/asia-pacific/hong-kong-private-limited.html">Hong Kong, Private Limited</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/caribbean/cayman-islands.html">Cayman Islands</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/caribbean/british-virgin-islands.html">British Virgin Islands</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/caribbean/nevis-llc-nbco.html">Nevis, LLC & NBCO</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/central-south-america/panama.html">Panama</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/central-south-america/belize.html">Belize</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <ul class="multi-column-dropdown">
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/mauritius-and-seychelles/seychelles/seychelles-ibc.html">Seychelles, IBC</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/mauritius-and-seychelles/mauritius/mauritius-gbc-2.html">Mauritius, GBC2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/mauritius-and-seychelles/mauritius/mauritius-gbc-1.html">Mauritius, GBC1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/middle-east/rak-ic.html">RAK IC</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/asia-pacific/singapore.html">Singapore</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/europe/cyprus.html">Cyprus</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <a href="#" class="dropdown-item dropdown-toggle" data-toggle="dropdown" id="AllJur" aria-haspopup="true" aria-expanded="false">All Jurisdictions</a>
+                                    <ul class="dropdown-menu multi-column columns-3" aria-labelledby="AllJur">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <ul class="multi-column-dropdown">
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/europe/cyprus.html">Cyprus</a>
+                                                    </li>
+                                                    <li>
+                                                        <p class="dropdown-header">Denmark</p>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/europe/denmark/denmark-aps.html">Aps</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/europe/denmark/denmark-as.html">AS</a>
+                                                    </li>
+
+                                                    <li>
+                                                        <p class="dropdown-header">Finland</p>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/europe/finland/finland-oya.html">OyA</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/europe/finland/finland-oyj.html">OyJ</a>
+                                                    </li>
+                                                    <li>
+                                                        <p class="dropdown-header">UK</p>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/europe/uk/uk-llp.html">LLP</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/europe/uk/uk-plc.html">PLC</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/europe/uk/uk-private-limited.html">Private Limited</a>
+                                                    </li>
+                                                    <li>
+                                                        <p class="dropdown-header">Germany</p>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/europe/germany/germany-ag.html">AG</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/europe/germany/germany-gmbh.html">GmbH</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/europe/gibraltar.html">Gibraltar</a>
+                                                    </li>
+                                                    <li>
+                                                        <p class="dropdown-header">Greece</p>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/europe/greece/greece-ae.html">AE</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/europe/greece/greece-epe.html">EPE</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/europe/greece/greece-offshore.html">Offshore</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/europe/guernsey.html">Guernsey</a>
+                                                    </li>
+                                                    <li>
+                                                        <p class="dropdown-header">Iceland</p>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/europe/iceland/iceland-ehf.html">EHF</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/europe/iceland/iceland-hf.html">HF</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/europe/ireland-resident-private-ltd.html">Ireland Resident Private Ltd</a>
+                                                    </li>
+                                                    <li>
+                                                        <p class="dropdown-header">Isle of Man</p>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/europe/isle-of-man/isle-of-man-hybrid.html">Hybrid</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/europe/isle-of-man/isle-of-man-llc.html">LLC</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/europe/isle-of-man/isle-of-man-private-company.html">Private Company</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <ul class="multi-column-dropdown">
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/caribbean/nevis-llc-nbco.html">Nevis, LLC & NBCO</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/central-south-america/panama.html">Panama</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/central-south-america/belize.html">Belize</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <ul class="multi-column-dropdown">
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/mauritius-and-seychelles/seychelles/seychelles-ibc.html">Seychelles, IBC</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/mauritius-and-seychelles/mauritius/mauritius-gbc-2.html">Mauritius, GBC2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/mauritius-and-seychelles/mauritius/mauritius-gbc-1.html">Mauritius, GBC1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/middle-east/rak-ic.html">RAK IC</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/asia-pacific/singapore.html">Singapore</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/europe/cyprus.html">Cyprus</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <ul class="multi-column-dropdown">
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/mauritius-and-seychelles/seychelles/seychelles-ibc.html">Seychelles, IBC</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/mauritius-and-seychelles/mauritius/mauritius-gbc-2.html">Mauritius, GBC2</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/mauritius-and-seychelles/mauritius/mauritius-gbc-1.html">Mauritius, GBC1</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/middle-east/rak-ic.html">RAK IC</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/asia-pacific/singapore.html">Singapore</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="./jurisdictions/europe/cyprus.html">Cyprus</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li>
+                                    <a href="#" class="dropdown-item dropdown-toggle" data-toggle="dropdown" id="PDFJur" aria-haspopup="true" aria-expanded="false">Jurisdictions With Brochure</a>
+                                    <ul class="dropdown-menu multi-column columns-2" aria-labelledby="PDFJur">
+                                        <li>
+                                            <a class="dropdown-item" href="./jurisdictions/asia-pacific/hong-kong-private-limited.html">Hong Kong, Private Limited</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="./jurisdictions/caribbean/cayman-islands.html">Cayman Islands</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="./jurisdictions/caribbean/british-virgin-islands.html">British Virgin Islands</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="./jurisdictions/caribbean/nevis-llc-nbco.html">Nevis, LLC & NBCO</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="./jurisdictions/central-south-america/panama.html">Panama</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="./jurisdictions/central-south-america/belize.html">Belize</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="./jurisdictions/mauritius-and-seychelles/seychelles/seychelles-ibc.html">Seychelles, IBC</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="./jurisdictions/mauritius-and-seychelles/mauritius/mauritius-gbc-2.html">Mauritius, GBC2</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="./jurisdictions/mauritius-and-seychelles/mauritius/mauritius-gbc-1.html">Mauritius, GBC1</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="./jurisdictions/middle-east/rak-ic.html">RAK IC</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="./jurisdictions/asia-pacific/singapore.html">Singapore</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="./jurisdictions/europe/cyprus.html">Cyprus</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.navbar-collapse-->
+            </nav>
+			<!--/.navbar-->
+			
+        <section id="landing">
             <div class="banner-img banner-col-left">
                 <img src="./resources/images/Contact-Us.jpg" width="140" height="280" alt="Banner image">
             </div>
-			<div class="banner-content banner-col-right">
+            <div class="banner-content banner-col-right">
                 <h1>Enquiry Form</h1>
                 <form id="enquiry-form" class="enquiry-form" action="mail_handler.php" method="post">
                     <table style="margin-bottom: 0;">
@@ -70,12 +365,12 @@
                                     <label>Full name</label>
                                 </td>
                                 <td>
-                                    <input maxlength="100"  type="text" name="full_name">
+                                    <input maxlength="100" type="text" name="full_name">
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                        <label>Please let us know how to contact you:</label>
+                    <label>Please let us know how to contact you:</label>
                     <table>
                         <tbody>
                             <tr>
@@ -100,169 +395,184 @@
                                     <label>Message</label>
                                 </td>
                                 <td colspan="3">
-                                    <textarea name="message"  style="overflow: hidden; word-wrap: break-word; resize: none; height: 93px;"></textarea>
-                                 </td>
+                                    <textarea name="message" style="overflow: hidden; word-wrap: break-word; resize: none; height: 93px;"></textarea>
+                                </td>
                             </tr>
                             <tr>
                                 <td></td>
                                 <td colspan="3">
-                                    <input type="submit"  value="Get in touch with a professional">
+                                    <input type="submit" value="Get in touch with a professional">
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                </form>    
+                </form>
             </div>
         </section>
-	</div>
 
-	<footer id="footer-container" class="wrapper main-bg">
-            <div class="grid-6-2">
-                <p>© RedWood Company Formations Ltd<br><a href="http://redwood-formations.com/sitemap">Sitemap</a></p>
-            </div>
-            <div class="grid-6-2">
-                <p id="footer-phone">+44 845 468 09 10</p><a href="mailto:info@redwood-formations.com">info@redwood-formations.com</a><p id="footer-skype">redwoodformations</p>
-            </div>
-            <div class="grid-6-2">
-                <p>Offices in Dubai, London and Globally</p>
-            </div>		
-        </footer>
+    <footer id="footer-container" class="wrapper main-bg">
+        <div class="grid-6-2">
+            <p>© RedWood Company Formations Ltd
+                <br><a href="http://redwood-formations.com/sitemap">Sitemap</a></p>
+        </div>
+        <div class="grid-6-2">
+            <p id="footer-phone">+44 845 468 09 10</p><a href="mailto:info@redwood-formations.com">info@redwood-formations.com</a>
+            <p id="footer-skype">redwoodformations</p>
+        </div>
+        <div class="grid-6-2">
+            <p>Offices in Dubai, London and Globally</p>
+        </div>
+    </footer>
 
-	
-	<script type="text/javascript" src="/public/themes/redwood/scripts/jquery.autosize.min.js"></script>
-	<script type="text/javascript" src="/public/themes/redwood/scripts/enquiries.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function() {
-		$('textarea').autosize();
-	});
+    <script type="text/javascript" src="/public/themes/redwood/scripts/jquery.autosize.min.js"></script>
+    <script type="text/javascript" src="/public/themes/redwood/scripts/enquiries.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('textarea').autosize();
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#content-table th').first().css('padding-top', '0');
+        });
+
+        function switchDisplay(swicth_id) {
+            switch (swicth_id) {
+                case 1:
+                    $('#popular').hide();
+                    $('#s2').removeClass('switched');
+                    $('#brochure').hide();
+                    $('#s3').removeClass('switched');
+                    $('#all').show();
+                    $('#s1').addClass('switched');
+                    $('#s3').css('margin', '0');
+                    $('#s2').css('margin', '0');
+                    $('#s1').css('margin', '0 15px 0 15px');
+                    jurBlockResized($('#jurisdictions-block').height() + 10);
+                    break
+                case 2:
+                    $('#brochure').hide();
+                    $('#s3').removeClass('switched');
+                    $('#all').hide();
+                    $('#s1').removeClass('switched');
+                    $('#popular').show();
+                    $('#s2').addClass('switched');
+                    $('#s3').css('margin', '0');
+                    $('#s1').css('margin', '0 20px 0 0');
+                    $('#s2').css('margin-right', '10px');
+                    jurBlockResized($('#jurisdictions-block').height() + 10);
+                    break
+                case 3:
+                    $('#all').hide();
+                    $('#s1').removeClass('switched');
+                    $('#popular').hide();
+                    $('#s2').removeClass('switched');
+                    $('#brochure').show();
+                    $('#s3').addClass('switched');
+                    $('#s1').css('margin', '0 0 0 20px');
+                    $('#s2').css('margin', '0');
+                    $('#s3').css('margin-left', '15px');
+                    jurBlockResized($('#jurisdictions-block').height() + 10);
+            }
+        }
+    </script>
+
+    <script type="text/javascript" src="/public/themes/redwood/scripts/menu.js"></script>
+    <script type="text/javascript">
+        if ($('#content-table th').attr('colspan')) {
+
+        } else {
+            $('#content-table th').attr('colspan', '2');
+        }
+    </script>
+
+    <script type="text/javascript">
+        var current_page_block_height = 0,
+            current_page_image_height = 0;
+
+        var services_block_height = 0,
+            services_image_height = 0;
+
+        var about_us_block_height = 0,
+            about_us_image_height = 0;
+
+        var jurisdictions_block_height = 0,
+            jurisdictions_image_height = 0;
+
+        $(document).ready(function() {
+
+            current_page_block_height = $('#current-page-block').height() + 10;
+            current_page_image_height = 179;
+            if (current_page_image_height > current_page_block_height) {
+                $('#current-page-block').css('background-position', 'right 10px');
+            }
+
+            services_block_height = $('#services-block').height() + 10;
+            services_image_height = 179;
+            if (services_image_height > services_block_height) {
+                $('#services-block').css('background-position', 'right 10px');
+            }
+
+            about_us_block_height = $('#about-us-block').height() + 10;
+            about_us_image_height = 179;
+            if (about_us_image_height > about_us_block_height) {
+                $('#about-us-block').css('background-position', 'right 10px');
+            }
+
+            jurisdictions_block_height = $('#jurisdictions-block').height() + 10;
+            jurisdictions_image_height = 424;
+            if (jurisdictions_image_height > jurisdictions_block_height) {
+                $('#jurisdictions-block').css('background-position', 'right 10px');
+            }
+
+        });
+
+        function jurBlockResized(height) {
+            if (jurisdictions_image_height >= height) {
+                $('#jurisdictions-block').css('background-position', 'right 10px');
+            } else {
+                $('#jurisdictions-block').css('background-position', 'right bottom');
+            }
+        }
+    </script>
+	<script>
+        $(document).ready(function() {
+            $('.dropdown a.xdrop').on("click", function(e) {
+                $(this).next('ul').toggle();
+                e.stopPropagation();
+                e.preventDefault();
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        function positionFooter() {
+            var mFoo = $("#footer-container");
+            if ((($(document.body).height() + mFoo.outerHeight()) < $(window).height() && mFoo.css("position") == "fixed") || ($(document.body).height() < $(window).height() && mFoo.css("position") != "fixed")) {
+                mFoo.css({
+                    position: "fixed",
+                    bottom: "0px"
+                });
+            } else {
+                mFoo.css({
+                    position: "static"
+                });
+            }
+        }
+
+        $(document).ready(function() {
+            positionFooter();
+            $(window).scroll(positionFooter);
+            $(window).resize(positionFooter);
+            $(window).load(positionFooter);
+            $('#main-content:not(:has(#sitemap)) ul, #main-content:not(:has(#sitemap)) ol').prev().addClass('before-list');
+        });
 	</script>
-	<script type="text/javascript">
-    	$(document).ready(function() {
-			$('#content-table th').first().css('padding-top', '0');
-		});
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="resources/js/bootstrap-4-navbar.js"></script>
 
-		function switchDisplay(swicth_id) {
-			switch (swicth_id) {
-				case 1:
-					$('#popular').hide();
-					$('#s2').removeClass('switched');
-					$('#brochure').hide();
-					$('#s3').removeClass('switched');
-					$('#all').show();
-					$('#s1').addClass('switched');
-					$('#s3').css('margin', '0');
-					$('#s2').css('margin', '0');
-					$('#s1').css('margin', '0 15px 0 15px');
-					jurBlockResized($('#jurisdictions-block').height() + 10);
-				break
-				case 2:
-					$('#brochure').hide();
-					$('#s3').removeClass('switched');
-					$('#all').hide();
-					$('#s1').removeClass('switched');
-					$('#popular').show();
-					$('#s2').addClass('switched');
-					$('#s3').css('margin', '0');
-					$('#s1').css('margin', '0 20px 0 0');
-					$('#s2').css('margin-right', '10px');
-					jurBlockResized($('#jurisdictions-block').height() + 10);
-				break
-				case 3:
-					$('#all').hide();
-					$('#s1').removeClass('switched');
-					$('#popular').hide();
-					$('#s2').removeClass('switched');
-					$('#brochure').show();
-					$('#s3').addClass('switched');
-					$('#s1').css('margin', '0 0 0 20px');
-					$('#s2').css('margin', '0');
-					$('#s3').css('margin-left', '15px');
-					jurBlockResized($('#jurisdictions-block').height() + 10);
-			}
-		}
-	</script>
-
-	<script type="text/javascript" src="/public/themes/redwood/scripts/menu.js"></script>
-	<script type="text/javascript">
-		if ($('#content-table th').attr('colspan')) {
-
-		} else {
-			$('#content-table th').attr('colspan', '2');
-		}
-	</script>
-	
-
-	<script type="text/javascript">
-
-	var current_page_block_height = 0,
-			current_page_image_height = 0;
-
-	var services_block_height = 0,
-			services_image_height = 0;
-
-	var about_us_block_height = 0,
-			about_us_image_height = 0;
-
-	var jurisdictions_block_height = 0,
-			jurisdictions_image_height = 0;
-
-	
-	$(document).ready(function() {
-
-		current_page_block_height = $('#current-page-block').height() + 10;
-		current_page_image_height = 179;
-		if (current_page_image_height > current_page_block_height) {
-			$('#current-page-block').css('background-position', 'right 10px');
-		}
-
-		services_block_height = $('#services-block').height() + 10;
-		services_image_height = 179;
-		if (services_image_height > services_block_height) {
-			$('#services-block').css('background-position', 'right 10px');
-		}
-
-		about_us_block_height = $('#about-us-block').height() + 10;
-		about_us_image_height = 179;
-		if (about_us_image_height > about_us_block_height) {
-			$('#about-us-block').css('background-position', 'right 10px');
-		}
-
-		jurisdictions_block_height = $('#jurisdictions-block').height() + 10;
-		jurisdictions_image_height = 424;
-		if (jurisdictions_image_height > jurisdictions_block_height) {
-			$('#jurisdictions-block').css('background-position', 'right 10px');
-		}
-
-
-	});
-	function jurBlockResized(height) {
-		if (jurisdictions_image_height >= height) {
-			$('#jurisdictions-block').css('background-position', 'right 10px');
-		} else {
-			$('#jurisdictions-block').css('background-position', 'right bottom');
-		}
-	}
-	</script>
-	
-	<script type="text/javascript">	
-	function positionFooter() { 
-		var mFoo = $("#footer-container"); 
-		if ((($(document.body).height() + mFoo.outerHeight()) < $(window).height() && mFoo.css("position") == "fixed") || ($(document.body).height() < $(window).height() && mFoo.css("position") != "fixed")) { 
-			mFoo.css({ position: "fixed", bottom: "0px" }); 
-		} else { 
-			mFoo.css({ position: "static" }); 
-		} 
-	} 
-	
-	$(document).ready(function () { 
-		positionFooter(); 
-		$(window).scroll(positionFooter); 
-		$(window).resize(positionFooter); 
-		$(window).load(positionFooter);
-		$('#main-content:not(:has(#sitemap)) ul, #main-content:not(:has(#sitemap)) ol').prev().addClass('before-list');
-	});
-	</script>
-
-<textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px; padding: 0px; box-sizing: content-box; word-wrap: break-word; overflow: hidden; transition: none; height: 0px !important; min-height: 0px !important; font-family: monospace; font-size: 13.3333px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; word-spacing: 0px; text-indent: 0px; line-height: normal; width: 288px;" class="autosizejs" id="autosizejs"></textarea>
+    <textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px; padding: 0px; box-sizing: content-box; word-wrap: break-word; overflow: hidden; transition: none; height: 0px !important; min-height: 0px !important; font-family: monospace; font-size: 13.3333px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; word-spacing: 0px; text-indent: 0px; line-height: normal; width: 288px;" class="autosizejs" id="autosizejs"></textarea>
 </body>
+
 </html>
